@@ -4,10 +4,11 @@
 2 . Top Navbar
 3 . Navbar,
 4 . Banner,
-5 . How Work,
-6 . Use Cases,
-7 . Pricing,
-8 . Start Free,
+5 . Company,
+6 . How Work,
+7 . Use Cases,
+8 . Pricing,
+9 . Start Free,
 ------------ */
 
 /* 1 .=============================== General Start ===============================*/
@@ -46,7 +47,7 @@ a {
 .top-navbar {
     display: flex;
     justify-content: center;
-    background-color: var(--blue-color);
+    background-color: var(--primary-color);
     color: var(--text-white);
 }
 
@@ -104,10 +105,6 @@ svg {
     color: var(--bg-gray);
 }
 
-.bg-blue {
-    background-color: blue;
-}
-
 .navbar-toggler {
     border: none;
 }
@@ -117,3 +114,63 @@ svg {
 }
 
 /* =============================== Navbar End ===============================*/
+.fixed_both {
+    position: relative;
+    transition: top 0.8s ease-in-out;
+}
+
+.fixed_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    animation: fadeInDown 0.8s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================== banner Start ===============================*/
+.banner {
+    background-color: var(--primary-color);
+    height: 60vh;
+}
+
+.banner_wrapper h1 {
+    font-size: 52px;
+    line-height: 52px;
+    color: var(--text-white);
+    padding-bottom: 20px;
+}
+
+.banner_wrapper p {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--text-white);
+}
+
+/* =============================== banner End ===============================*/
+
+/* =============================== Company Start ===============================*/
+/* =============================== Company End ===============================*/
+
+/* =============================== How Work Start ===============================*/
+.content_wrapper h2 {
+    font-size: 46px;
+    line-height: 55px;
+    color: var(--text-black);
+    font-weight: 500;
+    max-width: 75%;
+}
+
+/* =============================== How Work End ===============================*/
