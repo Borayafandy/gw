@@ -9,6 +9,7 @@
 7 . Use Cases,
 8 . Pricing,
 9 . Start Free,
+10. Footer
 ------------ */
 
 /* 1 .=============================== General Start ===============================*/
@@ -196,3 +197,50 @@ svg {
 }
 
 /* =============================== How Work End ===============================*/
+/* =============================== Footer Start ===============================*/
+.footer {
+    background-color: var(--bg-black);
+}
+
+.footer_wrapper h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-white);
+}
+
+.footer_wrapper li a {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s all ease-in-out;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.footer_wrapper li a:hover {
+    color: var(--primary-color);
+}
+
+.end_buttons a::after {
+    color: #1d252c;
+    content: "|";
+    padding-left: 8px;
+}
+
+.end_buttons li:last-child a::after {
+    content: "";
+}
+
+.end_buttons ul {
+    padding: 0 32px 14px 32px;
+    margin-bottom: 0 !important;
+    flex-wrap: wrap;
+}
+
+/* =============================== Footer End ===============================*/
