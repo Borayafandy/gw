@@ -169,7 +169,30 @@ svg {
     font-size: 46px;
     line-height: 55px;
     color: var(--text-black);
-    max-width: 75%;
+    padding: 0 69px 0 69px;
+}
+
+.product__content {
+    background-color: var(--text-white);
+    border: 1px solid var(--bg-black);
+}
+
+.product__text {
+    padding: 0 40px 0 40px;
+}
+
+
+.product__text h2 {
+    font-size: 34px;
+    line-height: 41px;
+    color: var(--text-black);
+    text-align: center;
+}
+
+.product__text p {
+    font-weight: 500;
+    line-height: 26px;
+    text-wrap: wrap;
 }
 
 /* =============================== How Work End ===============================*/
