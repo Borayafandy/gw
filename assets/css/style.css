@@ -1,0 +1,119 @@
+/* TABLE OF CONTENTS  */
+/* ------------
+1 . General,
+2 . Top Navbar
+3 . Navbar,
+4 . Banner,
+5 . How Work,
+6 . Use Cases,
+7 . Pricing,
+8 . Start Free,
+------------ */
+
+/* 1 .=============================== General Start ===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Color */
+    --primary-color: #1a73e8;
+    --blue-color: blue;
+    --bg-gray: #eee;
+    --bg-black: #010101;
+    /* Text Style  */
+    --primary-font: 'Manrope', sans-serif;
+    --text-white: #fff;
+    --text-black: #222;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--bg-gray);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =============================== General End ===============================*/
+
+/* =============================== Top Navbar Start ===============================*/
+.top-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue-color);
+    color: var(--text-white);
+}
+
+.top-navbar p {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.top-navbar .icons {
+    margin: 18px 0;
+}
+
+.top-navbar a {
+    color: var(--text-white);
+    margin-left: 6px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.icons {
+    transition: box-shadow 0.5s ease;
+}
+
+svg {
+    transition: margin-left 0.5s ease;
+}
+
+.icons:hover svg {
+    margin-left: 8px;
+}
+
+/* =============================== Top Navbar End ===============================*/
+
+/* =============================== Navbar End ===============================*/
+.navbar_wrapper {
+    background-color: var(--bg-black);
+}
+
+.navbar-brand h1 {
+    color: var(--text-white);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+}
+
+.custom-btn {
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.custom-btn:hover {
+    color: var(--bg-gray);
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* =============================== Navbar End ===============================*/
