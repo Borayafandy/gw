@@ -208,13 +208,6 @@ svg {
     color: var(--text-white);
 }
 
-.footer_wrapper li a {
-    color: var(--text-white);
-    font-weight: 500;
-    font-size: 14px;
-    transition: 0.3s all ease-in-out;
-}
-
 ul {
     padding: 0;
 }
@@ -223,14 +216,39 @@ li {
     list-style: none;
 }
 
+.footer_wrapper li a {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s all ease-in-out;
+}
+
 .footer_wrapper li a:hover {
     color: var(--primary-color);
 }
 
-.end_buttons a::after {
-    color: #1d252c;
-    content: "|";
-    padding-left: 8px;
+.social_icon a i {
+    margin-left: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+.social_icon a i:hover {
+    color: var(--primary-color) !important;
+    transition: 0.3s all ease-in-out;
+}
+
+.end_buttons p {
+    color: var(--text-white);
+}
+
+.end_buttons ul li a {
+    color: var(--text-white);
+}
+
+.end_buttons a::before {
+    color: var(--text-white);
+    content: "┃";
+    padding: 0 8px 0 8px;
 }
 
 .end_buttons li:last-child a::after {
