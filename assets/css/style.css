@@ -241,8 +241,14 @@ li {
     color: var(--text-white);
 }
 
-.end_buttons ul li a {
+.end_buttons li a {
     color: var(--text-white);
+    transition: 0.3s all ease-in-out;
+}
+
+.end_buttons li a:hover {
+    color: var(--primary-color) !important;
+    transition: 0.3s all ease-in-out;
 }
 
 .end_buttons a::before {
