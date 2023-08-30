@@ -114,7 +114,6 @@ svg {
     box-shadow: none !important;
 }
 
-/* =============================== Navbar End ===============================*/
 .fixed_both {
     position: relative;
     transition: top 0.8s ease-in-out;
@@ -140,6 +139,8 @@ svg {
         transform: translateY(0);
     }
 }
+
+/* =============================== Navbar End ===============================*/
 
 /* =============================== banner Start ===============================*/
 .banner {
@@ -268,3 +269,50 @@ li {
 }
 
 /* =============================== Footer End ===============================*/
+
+/* Responsive  */
+@media only screen and (max-width: 767px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .banner_wrapper h1 {
+        font-size: 42px;
+        line-height: 42px;
+        padding-bottom: 15px;
+    }
+
+    .banner_wrapper p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .content_wrapper h2 {
+        font-size: 42px;
+        line-height: 45px;
+        padding: 0 40px 0 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .banner_wrapper h1 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+    .content_wrapper h2 {
+        font-size: 32px;
+        line-height: 35px;
+        padding: 0;
+    }
+
+    .product__text {
+        padding: 0;
+    }
+
+    .product__text h2 {
+        font-size: 25px;
+        line-height: 31px;
+    }
+}
