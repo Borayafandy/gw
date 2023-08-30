@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+button:focus {
+    border: none;
+}
+
 /* =============================== General End ===============================*/
 
 /* =============================== Top Navbar Start ===============================*/
@@ -110,40 +114,26 @@ svg {
     border: none;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none !important;
 }
 
-.fixed_both {
-    position: relative;
-    transition: top 0.8s ease-in-out;
+.language-flag {
+    width: 30px;
+    height: 20px;
 }
 
-.fixed_top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    animation: fadeInDown 0.8s ease-in-out;
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.modal-body button {
+    color: var(--text-black);
+    text-decoration: none;
 }
 
 /* =============================== Navbar End ===============================*/
 
 /* =============================== banner Start ===============================*/
 .banner {
+    margin-top: 146px;
     background-color: var(--primary-color);
     height: 60vh;
 }
@@ -161,9 +151,35 @@ svg {
     color: var(--text-white);
 }
 
+.banner_btn a {
+    color: #202938 !important;
+    border-width: 0px !important;
+    border-color: #F1436D;
+    border-radius: 0px;
+    letter-spacing: -0.5px;
+    font-size: 18px;
+    font-weight: 600 !important;
+    background-image: linear-gradient(26deg, #e5a000 0%, #fcda8a 100%);
+    background-color: #F1436D;
+
+}
+
+.banner_btn a:hover {
+    border-color: rgba(241, 67, 109, 0.8) !important;
+    border-width: 0px !important;
+    background-image: linear-gradient(26deg, #e5b139 0%, #fce1a4 100%);
+    background-color: transparent;
+
+}
+
+
 /* =============================== banner End ===============================*/
 
 /* =============================== Company Start ===============================*/
+.img-fluid {
+    width: 70% !important;
+}
+
 /* =============================== Company End ===============================*/
 
 /* =============================== How Work Start ===============================*/

@@ -17,7 +17,7 @@
 
 <body>
     <!-- ============================== top Navbar Start==============================-->
-    <div class="fixed_both">
+    <div class="fixed-top">
         <div class="top-navbar">
             <p>Generate upto 5,000 words for FREE</p>
             <div class="icons">
@@ -52,6 +52,11 @@
                         <li class="nav-item">
                             <a class="nav-link custom-btn" href="#">Pricing</a>
                         </li>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#languageModal">
+                            <img class="language-flag" src="assets/images/flags/gb.svg" alt="Language"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Languages">
+                        </button>
+
                         <li class="nav-item">
                             <a class="nav-link custom-btn" href="#">Login</a>
                         </li>
@@ -64,6 +69,72 @@
             </div>
         </nav>
     </div>
+    <!-- Language Selection Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">Select a Language</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('us', 'assets/images/flags/us.svg')">
+                                <img class="language-flag" src="assets/images/flags/us.svg" alt="English">
+                                English
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('sa', 'assets/images/flags/sa.svg')">
+                                <img class="language-flag" src="assets/images/flags/sa.svg" alt="عَرَبِيّ">
+                                عَرَبِيّ
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('tr', 'assets/images/flags/tr.svg')">
+                                <img class="language-flag" src="assets/images/flags/tr.svg" alt="Turkish">
+                                Turkish
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('fr', 'assets/images/flags/fr.svg')">
+                                <img class="language-flag" src="assets/images/flags/fr.svg" alt="French">
+                                French
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('ru', 'assets/images/flags/ru.svg')">
+                                <img class="language-flag" src="assets/images/flags/ru.svg" alt="Russian">
+                                Russian
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('in', 'assets/images/flags/in.svg')">
+                                <img class="language-flag" src="assets/images/flags/in.svg" alt="India">
+                                India
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('dz', 'assets/images/flags/dz.svg')">
+                                <img class="language-flag" src="assets/images/flags/dz.svg" alt="Algeria">
+                                Algeria
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('de', 'assets/images/flags/de.svg')">
+                                <img class="language-flag" src="assets/images/flags/de.svg" alt="Germany">
+                                Germany
+                            </button>
+                            <button class="btn btn-link btn-light"
+                                onclick="changeLanguage('cn', 'assets/images/flags/cn.svg')">
+                                <img class="language-flag" src="assets/images/flags/cn.svg" alt="China">
+                                China
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ============================== Navbar End==============================-->
 
     <!-- ============================== Banner Start==============================-->
@@ -74,7 +145,7 @@
                 <p>Write more eCommerce product content and watch your performance on SERPs and conversions skyrocket
                 </p>
                 <div class="banner_btn">
-                    <a href="#" class="btn btn-dark rounded-0 btn-lg mt-4 py-3 px-4">Get Started for Free</a>
+                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">Get Started for Free</a>
                 </div>
             </div>
         </div>
@@ -89,34 +160,33 @@
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
-                            <img src="assets/images/company/VIGO_prev_ui.png" alt="vigo" width="100" height="100">
+                            <img src="assets/images/company/VIGO_prev_ui.png" alt="vigo" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
-                            <img src="assets/images/company/marshalls.png" alt="marshalls" width="145" height="28.27">
+                            <img src="assets/images/company/marshalls.png" alt="marshalls" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
-                            <img src="assets/images/company/27058.png" alt="designer eye" width="101.48"
-                                height="101.48">
+                            <img src="assets/images/company/27058.png" alt="designer eye" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
-                            <img src="assets/images/company/ocado.png" alt="ocado" width="145" height="31.27">
+                            <img src="assets/images/company/ocado.png" alt="ocado" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
-                            <img src="assets/images/company/target.png" alt="target" width="82.64" height="109.55">
+                            <img src="assets/images/company/target.png" alt="target" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-lg-2 col-4">
                         <div class="company_wrapper">
                             <img src="assets/images/company/hom-furniture-logo-vector_prev_ui.png" alt="furniture"
-                                width="120.33" height="66.84">
+                                class="img-fluid">
                         </div>
                     </div>
                 </div>

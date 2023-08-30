@@ -1,14 +1,7 @@
-window.addEventListener("scroll", () => {
-  const fixedBoth = document.querySelector(".fixed_both");
-  const scrollPosition = window.scrollY;
-
-  if (scrollPosition > 0) {
-    fixedBoth.classList.add("fixed_top");
-  } else {
-    fixedBoth.classList.remove("fixed_top");
-  }
-});
-
-AOS.init({
-  duration: 1200,
-});
+// JavaScript function change the language and flag
+function changeLanguage(langCode, flagSrc) {
+  document.querySelector(".language-flag").src = flagSrc;
+  console.log("Language changed to:", langCode);
+  document.getElementById("languageModal").classList.remove("show");
+  document.querySelector(".modal-backdrop").remove();
+}
