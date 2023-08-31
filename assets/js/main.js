@@ -1,4 +1,4 @@
-// JavaScript function change the language and flag
+//change the language and flag
 function changeLanguage(langCode, flagSrc) {
   document.querySelector(".language-flag").src = flagSrc;
   console.log("Language changed to:", langCode);
