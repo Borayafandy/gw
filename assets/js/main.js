@@ -5,3 +5,7 @@ function changeLanguage(langCode, flagSrc) {
   document.getElementById("languageModal").classList.remove("show");
   document.querySelector(".modal-backdrop").remove();
 }
+
+AOS.init({
+  duration: 1200,
+});
