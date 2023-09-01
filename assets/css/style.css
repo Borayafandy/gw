@@ -219,7 +219,7 @@ svg {
 /* =============================== banner Start ===============================*/
 .banner_bg {
     margin-top: 146px;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 115, 232, 1) 61%, rgba(23, 70, 133, 1) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 30%, rgba(26, 115, 232, 1) 120%, rgba(23, 70, 133, 1) 100%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -386,6 +386,17 @@ svg {
     height: 380px;
 }
 
+.ai_image p {
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.ai_image:hover p{
+    display: block !important;
+
+}
 /* ============================== AI image End ============================== */
 
 /* ==============================AI Chat Start============================== */
@@ -408,6 +419,7 @@ svg {
 .accordion__body {
     background-color: var(--bg-black) !important;
     color: var(--text-white);
+    font-size: 20px;
 }
 
 .accordion-button:not(.collapsed)::after {
