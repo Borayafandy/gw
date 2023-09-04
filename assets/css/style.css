@@ -29,6 +29,7 @@
     --bg-lightgray: #e4e4e4;
     --bg-black: #010101;
     --bg-white: #fff;
+    --bg-darkblack: #222;
     /* Text Style  */
     --primary-font: 'Manrope', sans-serif;
     --text-white: #fff;
@@ -140,7 +141,7 @@ svg {
 .banner {
     margin-top: 146px;
     background-color: var(--primary-color);
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .banner_wrapper h1 {
@@ -393,10 +394,11 @@ svg {
     color: white;
 }
 
-.ai_image:hover p{
+.ai_image:hover p {
     display: block !important;
 
 }
+
 /* ============================== AI image End ============================== */
 
 /* ==============================AI Chat Start============================== */
@@ -439,14 +441,203 @@ svg {
 
 /* ==============================FAQ End============================== */
 
+/* ========================================================================================= */
+/* ------------------------------------ Pricing ----------------------------------- */
+/* ========================================================================================= */
+
+/* ------------------------------------ Pricing card Start ----------------------------------- */
+.tabs_wrapper {
+    background-color: var(--bg-black);
+}
+
+.tabs_section {
+    max-width: 1080px;
+}
+
+.price_btn {
+    background-color: var(--text-black);
+    width: 30%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+
+.price_btn {
+    min-width: 15%;
+}
+
+
+.tab_btn button {
+    border: none !important;
+    border-radius: 10px;
+    color: var(--text-white);
+    background-color: var(--bg-darkblack);
+}
+
+.tab_btn button:focus {
+    color: var(--bg-darkblack) !important;
+    background-color: var(--bg-white);
+}
+
+.pricing h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+
+.pricing p {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.price_table_feature li {
+    line-height: 26px;
+}
+
+.card_header {
+    background-color: var(--primary-color);
+}
+
+.center_card h2 {
+    margin-bottom: 10px !important;
+}
+
+.thard_card p {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    min-height: 568px;
+}
+
+/* ------------------------------------ Pricing card End ----------------------------------- */
+/* ============================== Started Free Start ============================== */
+.Start_Free {
+    width: 80%;
+    max-width: 1080px;
+}
+
+.Start_Free p {
+    font-weight: 600;
+    font-size: 30px;
+    font-weight: 39px;
+    color: var(--text-black);
+}
+
+/* ============================== Started Free End ============================== */
+/* ========================================================================================= */
+/* ------------------------------------ LOG IN  ----------------------------------- */
+/* ========================================================================================= */
+/* ------------------------------------ LOG IN Start ----------------------------------- */
+.log_in__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.logo_icon {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.logo_icon h3 {
+    font-weight: 700;
+    line-height: 22px;
+    line-height: 31px;
+    margin-bottom: 0;
+}
+
+.main {
+    width: 40%;
+}
+
+.input_group label {
+    margin-bottom: 0;
+}
+
+.input_group input {
+    height: 43px;
+}
+
+.input_group .form-control {
+    padding-left: 2.375rem;
+}
+
+.input_group .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.other {
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+p {
+    display: flex;
+    align-items: center;
+}
+
+p:before,
+p:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #aaa;
+}
+
+p:before {
+    margin: 0 20px 0 0;
+}
+
+p:after {
+    margin: 0 0 0 20px;
+}
 
 
 
-
-
-
-
-
+/* ------------------------------------ LOG IN End -----------------------------------  */
 
 /* =============================== Footer Start ===============================*/
 .footer,
@@ -534,10 +725,13 @@ li {
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .banner {
-        height: 70vh;
+@media only screen and (max-width: 991px) {
+    .price_btn {
+        width: 40%;
     }
+}
+
+@media only screen and (max-width: 767px) {
 
     .banner_wrapper h1 {
         font-size: 42px;
@@ -573,12 +767,28 @@ li {
         font-size: 35px;
         line-height: 15px;
     }
+
+    .price_btn {
+        width: 60%;
+    }
+
+    .main {
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .ai_image img {
         width: 100%;
         height: auto;
+    }
+
+    .price_btn {
+        width: 100%;
+    }
+
+    .main {
+        width: 80%;
     }
 }
 
