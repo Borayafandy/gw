@@ -1,0 +1,251 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chat Assistants | Web</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svgicon">
+    <!-- font Awesome  -->
+    <script src="https://kit.fontawesome.com/31cf530d7e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css.map">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- ============================== top Navbar Start==============================-->
+    <header class="fixed-top">
+        <div class="container-fluid p-0">
+            <div class="top-navbar">
+                <p>Generate upto 5,000 words for FREE</p>
+                <div class="icons">
+                    <a href="#">Start Today <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                            height="20"></a>
+                </div>
+            </div>
+        </div>
+        <!-- ============================== top Navbar End==============================-->
+
+        <!-- ============================== Navbar Start==============================-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
+            <div class="container">
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="assets/images/logo/logo.svg"
+                        width="33" height="27" alt="Logo">
+                    <h1>GravityWrite</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="features.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="pricing.html">Pricing</a>
+                        </li>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#languageModal">
+                            <img class="language-flag" src="assets/images/flags/gb.svg" alt="Language"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Languages">
+                        </button>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="signup.html">Start for
+                                Free</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Language Selection Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">Select a Language</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('us', 'assets/images/flags/us.svg')">
+                                <img class="language-flag" src="assets/images/flags/us.svg" alt="English">
+                                English
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('sa', 'assets/images/flags/sa.svg')">
+                                <img class="language-flag" src="assets/images/flags/sa.svg" alt="عَرَبِيّ">
+                                عَرَبِيّ
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('tr', 'assets/images/flags/tr.svg')">
+                                <img class="language-flag" src="assets/images/flags/tr.svg" alt="Turkish">
+                                Turkish
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('fr', 'assets/images/flags/fr.svg')">
+                                <img class="language-flag" src="assets/images/flags/fr.svg" alt="French">
+                                French
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('ru', 'assets/images/flags/ru.svg')">
+                                <img class="language-flag" src="assets/images/flags/ru.svg" alt="Russian">
+                                Russian
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('in', 'assets/images/flags/in.svg')">
+                                <img class="language-flag" src="assets/images/flags/in.svg" alt="India">
+                                India
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('dz', 'assets/images/flags/dz.svg')">
+                                <img class="language-flag" src="assets/images/flags/dz.svg" alt="Algeria">
+                                Algeria
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('de', 'assets/images/flags/de.svg')">
+                                <img class="language-flag" src="assets/images/flags/de.svg" alt="Germany">
+                                Germany
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('cn', 'assets/images/flags/cn.svg')">
+                                <img class="language-flag" src="assets/images/flags/cn.svg" alt="China">
+                                China
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Navbar End==============================-->
+    <!-- ============================== Banner Start==============================-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner_wrapper text-center py-5 mx-auto">
+                <h1>The AI Writing Blog</h1>
+                <p>Write more eCommerce product content and watch your performance on SERPs and conversions skyrocket
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================blog=========-->
+    <div class="how__start py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card mt-5">
+                      <img src="assets/images/blog/1.png" class="card-img-top" alt="...">
+                      <div class="blog card-body">
+                        <h5 class="card-title"><a href="blog_details.html" class="text-dark">From 169 Customers to 8,266 in 28 Days: How Frase Built the Biggest AppSumo Launch Ever</a></h5>
+                        <a href="#" class="btn btn-dark">Read More...</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card mt-5">
+                      <img src="assets/images/blog/2.png" class="card-img-top" alt="...">
+                      <div class="blog card-body">
+                        <h5 class="card-title"><a href="blog_details.html" class="text-dark">From 169 Customers to 8,266 in 28 Days: How Frase Built the Biggest AppSumo Launch Ever</a></h5>
+                        <a href="#" class="btn btn-dark">Read More...</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card mt-5">
+                      <img src="assets/images/blog/1.png" class="card-img-top" alt="...">
+                      <div class="blog card-body">
+                        <h5 class="card-title"><a href="blog_details.html" class="text-dark">From 169 Customers to 8,266 in 28 Days: How Frase Built the Biggest AppSumo Launch Ever</a></h5>
+                        <a href="#" class="btn btn-dark">Read More...</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card mt-5">
+                      <img src="assets/images/blog/2.png" class="card-img-top" alt="...">
+                      <div class="blog card-body">
+                        <h5 class="card-title"><a href="blog_details.html" class="text-dark">From 169 Customers to 8,266 in 28 Days: How Frase Built the Biggest AppSumo Launch Ever</a></h5>
+                        <a href="#" class="btn btn-dark">Read More...</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============end blog========-->
+    <!-- ============================== Footer Start ==============================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper pt-5 pb-5">
+                <div class="row  pb-5 m-5">
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>Explore</h2>
+                        <ul>
+                            <li> <a href="#">Features</a></li>
+                            <li> <a href="#">Pricing</a></li>
+                            <li> <a href="#">Knowledge Base</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>Company</h2>
+                        <ul>
+                            <li> <a href="#">Support</a></li>
+                            <li> <a href="#">Become an Affiliate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-none">
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon text-center py-4 d-none">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2x" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="end_buttons pb-3">
+                <ul class="d-flex justify-content-center">
+                    <li>
+                        <p>© 2023 Describely</p>
+                    </li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">User Content Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================== Footer End ==============================-->
+</body>
+<!-- Bootstrap JS -->
+<script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/bootstrap.bundle.min.js.map"></script>
+<!-- Aos JS  -->
+<script src="assets/js/aos.js"></script>
+<!-- Custom JS -->
+<script src="assets/js/main.js"></script>
+
+</html>

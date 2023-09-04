@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gravity Write Website</title>
+    <title>AI Chat Assistants | Web</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/svgicon">
     <!-- font Awesome  -->
@@ -14,19 +14,22 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css.map">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- ============================== top Navbar Start==============================-->
-    <div class="fixed-top">
-        <div class="top-navbar">
-            <p>Generate upto 5,000 words for FREE</p>
-            <div class="icons">
-                <a href="#">Start Today <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                        fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                    </svg></a>
+    <header class="fixed-top">
+        <div class="container-fluid p-0">
+            <div class="top-navbar">
+                <p>Generate upto 5,000 words for FREE</p>
+                <div class="icons">
+                    <a href="#">Start Today <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                            height="20"></a>
+                </div>
             </div>
         </div>
         <!-- ============================== top Navbar End==============================-->
@@ -34,7 +37,7 @@
         <!-- ============================== Navbar Start==============================-->
         <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
             <div class="container">
-                <a class="navbar-brand d-flex gap-1" href="homeindex.html"><img src="assets/images/logo/logo.svg"
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="assets/images/logo/logo.svg"
                         width="33" height="27" alt="Logo">
                     <h1>GravityWrite</h1>
                 </a>
@@ -45,10 +48,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav gap-4 text-center">
                         <li class="nav-item">
-                            <a class="nav-link custom-btn" href="index.html">How it works</a>
+                            <a class="nav-link custom-btn" href="features.html">Features</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-btn" href="#">Use Cases</a>
+                            <a class="nav-link custom-btn" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link custom-btn" href="pricing.html">Pricing</a>
@@ -61,14 +64,14 @@
                             <a class="nav-link custom-btn" href="login.html">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="#">Start for
+                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="signup.html">Start for
                                 Free</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <!-- Language Selection Modal -->
     <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -136,115 +139,369 @@
         </div>
     </div>
     <!-- ============================== Navbar End==============================-->
-
     <!-- ============================== Banner Start==============================-->
-    <section class="banner">
+    <section class="banner_bg">
         <div class="container">
-            <div class="banner_wrapper text-center py-5 mx-auto">
-                <h1>Drive better results instantly</h1>
-                <p>Write more eCommerce product content and watch your performance on SERPs and conversions skyrocket
-                </p>
-                <div class="banner_btn">
-                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">Get Started for Free</a>
+            <div class="text-center py-5">
+                <div class="banner_heading mx-auto">
+                    <p class="writeone">AI-POWERED WRITING TOOL</p>
+                    <h1>Supercharge Your Content Creation with AI 🔥</h1>
+                    <p class="writetwo">Create blogs, ad copies, emails, social media posts, and more in seconds!</p>
+                    <div class="mb-5">
+                        <a href="#" class="btn btn-warning rounded-0 btn-lg mt-4 py-3 px-4 font-weight-bold">Start
+                            Writing For Free</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <div class="image-container">
+                            <img src="assets/images/main/download.svg" alt="Image 1">
+                            <img src="assets/images/main/download.svg" alt="Image 2">
+                            <img src="assets/images/main/download.svg" alt="Image 3">
+                            <img src="assets/images/main/download.svg" alt="Image 4">
+                            <img src="assets/images/main/download.svg" alt="Image 5">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ============================== Banner End==============================-->
 
-    <!-- ============================== Company Start==============================-->
+    <!-- ============================== TOOLKIT Start==============================-->
     <section>
         <div class="container">
-            <div class="company_wrapper py-5">
-                <!--data-aos="fade-up" -->
-                <div class="row align-items-center">
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/VIGO_prev_ui.png" alt="vigo" class="img-fluid w-75">
+            <div class="toolkit_wrapper py-5 mx-auto text-center" data-aos="fade-up">
+                <p>AI-POWERED WRITING TOOL</p>
+                <h1>80+ Powerful AI Writing Tools at your Fingertips.</h1>
+            </div>
+            <div class="py-4">
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/pen.png" alt="Writer" width="65" height="65">
+                                <h3 class="mt-3">Instant Article Writer</h3>
+                                <p>Get instant articles, quality guaranteed in minutes!</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/marshalls.png" alt="marshalls" class="img-fluid w-75">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/display.png" alt="Writer" width="65" height="65">
+                                <h3 class="mt-3">Website/SEO Content</h3>
+                                <p>Effortlessly create SEO-friendly content.</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/27058.png" alt="designer eye" class="img-fluid w-75">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/copy-com.png" alt="Writer" width="65" height="65">
+                                <h3 class="mt-3">Ad Copy</h3>
+                                <p>Craft attention-grabbing ad copies faster!</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/ocado.png" alt="ocado" class="img-fluid w-75">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/social-post.png" alt="Writer" width="65" height="65">
+                                <h3 class="mt-3">Social media post generation</h3>
+                                <p>Get more likes, shares, and followers with AI.</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/target.png" alt="target" class="img-fluid w-75">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/video-camera.png" alt="Writer" width="65" height="65">
+                                <h3 class="mt-3">YouTube Video scripts</h3>
+                                <p>Upgrade your YouTube game with AI scripts.</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-4">
-                        <div class="company_wrapper">
-                            <img src="assets/images/company/hom-furniture-logo-vector_prev_ui.png" alt="furniture"
-                                class="img-fluid w-75">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card card_content border-0 rounded-4 text-center">
+                            <div class="card-body">
+                                <img src="assets/images/icon/open-email-message.png" alt="Writer" width="65"
+                                    height="65">
+                                <h3 class="mt-3">Email marketing</h3>
+                                <p>Create high-converting emails in a snap.</p>
+                                <div class="arrow_img">
+                                    <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                                        height="20">
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="banner_btn mb-5 text-center" data-aos="flip-left">
+                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">See All Features</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ============================== Company End==============================-->
+    <!-- ============================== TOOLKIT End ==============================-->
 
-    <!-- ============================== How Work Start==============================-->
-    <section>
-        <div class="container" style="max-width: 1050px !important;">
-            <div class="content_wrapper text-center pb-5">
-                <h2>Smart Marketing Teams use Describely to scale their product content creation</h2>
+    <!-- ============================== AI image Start ==============================-->
+    <section class="container-fluid p-0 image_wrapper">
+        <div class="container">
+            <div class="toolkit_wrapper py-5 mx-auto text-center" data-aos="fade-up">
+                <p>AI-POWERED WRITING TOOL</p>
+                <h1>80+ Powerful AI Writing Tools at your Fingertips.</h1>
             </div>
-            <div class="product__content p-lg-5 p-md-3 p-3">
-                <div class="row g-3">
-                    <div class="col-lg-6 col-md-6 col-12 text-center">
-                        <img src="assets/images/main/Group-53.png" alt="Group" class="img-fluid">
+
+            <div class="row pb-5 gx-0">
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
-                        <div class="product__text">
-                            <h2>High-quality Product Descriptions</h2>
-                            <p>With Describely, the ability to create high-quality product content is just a few clicks
-                                away. Write product descriptions, bullet points, titles and tags easily and at scale
-                            </p>
-                        </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="text-center ai_image position-relative">
+                        <p class="d-none position-absolute top-50 start-50">A cute cat sea on laptop</p>
+                        <img src="assets/images/main/Ai_generator.png" alt="Aigenerator">
                     </div>
                 </div>
             </div>
-            <div class="product__content p-lg-5 p-md-3 p-3 my-5">
-                <div class="row g-3">
-                    <div class="col-lg-6 col-md-6 col-12  d-flex align-items-center">
-                        <div class="product__text">
-                            <h2>Optimize for SEO</h2>
-                            <p>Our SEO tools are built to help you rank #1 no matter where you sell your products
-                                online
-                                <br><br>
-                                Let Describely plan your keywords for you, score your existing content against SEO
-                                best
-                                practices and give recommendations on keywords that help your content rank faster
-                                than
-                                ever before
-                            </p>
+            <div class="banner_btn pb-5 text-center" data-aos="flip-left">
+                <a href="#" class="btn btn-lg mt-4 py-3 px-4">Generate Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== AI image End ==============================-->
+
+    <!-- ============================== AI Chat Start ==============================-->
+    <section class="container-fluid p-0 chat_wrapper ">
+        <div class="container">
+            <div class="toolkit_wrapper py-5 mx-auto text-center" data-aos="fade-up">
+                <p class="text-dark">AI-POWERED WRITING TOOL</p>
+                <h1 class="text-white">80+ Powerful AI Writing Tools at your Fingertips.</h1>
+            </div>
+            <div class="chat_image pb-5">
+                <img src="assets/images/main/main.png" alt="Chat" class="img-fluid">
+                <!--style="width: 100%; height: auto;" -->
+            </div>
+            <div class="banner_btn pb-5 text-center" data-aos="flip-left">
+                <a href="#" class="btn btn-lg mt-4 py-3 px-4">Chat Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== AI Chat End ==============================-->
+
+    <!-- ============================== FAQ Start ==============================-->
+    <section class="faq_wrapper pb-5">
+        <div class="container">
+            <div class="chat_content pt-5 mx-auto text-center" data-aos="fade-up">
+                <h1>FAQs</h1>
+            </div>
+            <div class="accordion accordion-flush py-5 px-5" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed accordion__btn fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            What is web application development?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">
+                            A web application is an interactive software that runs on a web server and is accessible via
+                            a
+                            web browser. It is structured so that the user interface sends data back to the development
+                            team that created it.
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12 text-center">
-                        <img src="assets/images/main/SEO-meta-description.png" alt="SEO-meta" class="img-fluid">
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                            aria-controls="flush-collapseTwo">
+                            Why should you outsource web application development services From Inletsky?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
                     </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            How much does it cost to develop a web application?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
+                            aria-controls="flush-collapsefour">
+                            Which programming languages are used for web applications?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this
+                            accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is
+                            the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of
+                            content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more
+                            representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false"
+                            aria-controls="flush-collapsefive">
+                            How long does it take to build a web app?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this
+                            accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is
+                            the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of
+                            content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more
+                            representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingsix">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false"
+                            aria-controls="flush-collapsesix">
+                            Which is the best custom web app development company?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingseven">
+                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false"
+                            aria-controls="flush-collapseseven">
+                            Which is the best custom web app development company?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseseven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+
+                <div class="banner_btn pb-5 text-center" data-aos="flip-left">
+                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">Get Started for Free</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ============================== How Work End==============================-->
+    <!-- ============================== FAQ End ==============================-->
+
     <!-- ============================== Footer Start ==============================-->
     <footer class="footer">
         <div class="container">
-            <div class="footer_wrapper pt-5">
-                <div class="row">
+            <div class="footer_wrapper pt-5 pb-5">
+                <div class="row  pb-5 m-5">
                     <div class="col-md-3 col-lg-3 col-6">
                         <h2>Explore</h2>
                         <ul>
@@ -264,7 +521,7 @@
                     </div>
                 </div>
             </div>
-            <div class="social_icon text-center py-4">
+            <div class="social_icon text-center py-4 d-none">
                 <a href="#"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter fa-2x" style="color: #ffffff;"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
@@ -284,14 +541,19 @@
         </div>
     </footer>
     <!-- ============================== Footer End ==============================-->
-
-
 </body>
 <!-- Bootstrap JS -->
 <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="assets/bootstrap/bootstrap.bundle.min.js.map"></script>
+<!-- Aos JS  -->
+<script src="assets/js/aos.js"></script>
 <!-- Custom JS -->
 <script src="assets/js/main.js"></script>
-
+<script type="text/javascript">
+    let tooltipelements = document.querySelectorAll("[data-bs-toggle='tooltip']");
+    tooltipelements.forEach((el) => {
+        new bootstrap.Tooltip(el);
+    });
+</script>
 
 </html>
