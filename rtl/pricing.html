@@ -1,0 +1,575 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chat Assistants | Web</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.svg" type="image/svgicon">
+    <!-- font Awesome  -->
+    <script src="https://kit.fontawesome.com/31cf530d7e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css.map">
+    <!-- Aos CSS -->
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style-rtl.css">
+</head>
+
+<body class="rtl_diraction">
+    <!-- ============================== top Navbar Start ==============================-->
+    <header class="fixed-top">
+        <div class="container-fluid p-0">
+            <div class="top-navbar">
+                <p>قم بإنشاء ما يصل إلى 5000 كلمة مجانًا</p>
+                <div class="icons rtl_icon">
+                    <a href="#">إبدأ اليوم <img src="../assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                            height="20"></a>
+                </div>
+            </div>
+        </div>
+        <!-- ============================== top Navbar End ==============================-->
+
+        <!-- ============================== Navbar Start ==============================-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
+            <div class="container">
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="../assets/images/logo/logo.svg"
+                        width="33" height="27" alt="Logo">
+                    <h1>GravityWrite</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="features.html">سمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="blog.html">مدونة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="pricing.html">التسعير</a>
+                        </li>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#languageModal">
+                            <img class="language-flag" src="../assets/images/flags/gb.svg" alt="Language"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Languages">
+                        </button>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="login.html">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="signup.html">ابدأ
+                                حر</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Language Selection Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">اختر لغة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('us', '../assets/images/flags/us.svg')">
+                                <img class="language-flag" src="../assets/images/flags/us.svg" alt="English">
+                                English
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('sa', '../assets/images/flags/sa.svg')">
+                                <img class="language-flag" src="../assets/images/flags/sa.svg" alt="عَرَبِيّ">
+                                عَرَبِيّ
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('tr', '../assets/images/flags/tr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/tr.svg" alt="Turkish">
+                                Turkish
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('fr', '../assets/images/flags/fr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/fr.svg" alt="French">
+                                French
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('ru', '../assets/images/flags/ru.svg')">
+                                <img class="language-flag" src="../assets/images/flags/ru.svg" alt="Russian">
+                                Russian
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('in', '../assets/images/flags/in.svg')">
+                                <img class="language-flag" src="../assets/images/flags/in.svg" alt="India">
+                                India
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('dz', '../assets/images/flags/dz.svg')">
+                                <img class="language-flag" src="../assets/images/flags/dz.svg" alt="Algeria">
+                                Algeria
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('de', '../assets/images/flags/de.svg')">
+                                <img class="language-flag" src="../assets/images/flags/de.svg" alt="Germany">
+                                Germany
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('cn', '../assets/images/flags/cn.svg')">
+                                <img class="language-flag" src="../assets/images/flags/cn.svg" alt="China">
+                                China
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Navbar End ==============================-->
+    <!-- ============================== Banner Start==============================-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner_wrapper text-center py-5 mx-auto">
+                <h1>تحقيق نتائج أفضل على الفور</h1>
+                <p>اكتب المزيد من محتوى منتج التجارة الإلكترونية وشاهد أدائك على SERPs والتحويلات التي ترتفع بشكل كبير
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Banner End==============================-->
+    <!-- ============================== Pricing Start ==============================-->
+    <section class="tabs_wrapper">
+        <div class="container ">
+            <div class="tabs_section py-5 mx-auto">
+                <div class="price_btn rounded-2 my-5">
+                    <ul class="nav d-flex justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item tab_btn" role="presentation">
+                            <button class="nav-link active fw-bold" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                aria-selected="true">شهريا</button>
+                        </li>
+                        <li class="nav-item tab_btn" role="presentation">
+                            <button class="nav-link fw-bold" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                aria-selected="false">سنوي</button>
+                        </li>
+                        <li class="nav-item tab_btn" role="presentation">
+                            <button class="nav-link fw-bold" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                                aria-selected="false">حياة</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 mb-3">
+                                <div class="card rounded-3 mt-5 border-0">
+                                    <div class="card-body">
+                                        <div class="pricing text-center align-items-center py-3">
+                                            <h2>حر</h2>
+                                            <p>$0/yr</p>
+                                        </div>
+                                        <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                                            <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">البدء</a>
+                                        </div>
+                                        <div class="price_table_feature">
+                                            <ul>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">ما يصل إلى 5 منتجات</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">1 مستخدم</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">25 جيل/شهر</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">استيراد CSV</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 mb-3">
+                                <div class="card center_card rounded-3 border-0">
+                                    <div class="card-header text-center card_header border-bottom-0">
+                                        <p class="mb-0"><strong>تتمتع جميع خططنا بضمان استعادة الأموال لمدة 30 يومًا</strong>
+                                        </p>
+                                    </div>
+                                    <div class="card-body pt-4">
+                                        <div class="pricing text-center align-items-center py-3">
+                                            <h2>جوهر</h2>
+                                            <div class="text-muted my-1">يبدأ من</div>
+                                            <p>90 دولارًا في السنة</p>
+                                        </div>
+                                        <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                                            <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">ابدأ تجربة مجانية</a>
+                                        </div>
+                                        <div
+                                            class="price_table_feature justify-content-between align-items-center d-flex">
+                                            <ul>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">ما يصل إلى 5 منتجات</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">1 مستخدم</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">25 جيل/شهر</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">استيراد CSV</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">1 مستخدم</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">25 جيل/شهر</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">استيراد CSV</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-12 mb-3">
+                                <div class="card rounded-3 mt-5 border-0">
+                                    <div class="card-body">
+                                        <div class="pricing thard_card text-center align-items-center py-3">
+                                            <h2>مَشرُوع</h2>
+                                            <p>مخصصة لك</p>
+                                        </div>
+                                        <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                                            <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">اتصل بنا</a>
+                                        </div>
+                                        <div class="price_table_feature">
+                                            <ul>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">ما يصل إلى 5 منتجات</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">1 مستخدم</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">25 جيل/شهر</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row pb-5 justify-content-center">
+                            <div class="col-lg-4 col-12 mb-3">
+                                <div class="card center_card rounded-3 border-0">
+                                    <div class="card-header text-center card_header border-bottom-0">
+                                        <p class="mb-0"><strong>تتمتع جميع خططنا بضمان استعادة الأموال لمدة 30 يومًا</strong>
+                                        </p>
+                                    </div>
+                                    <div class="card-body pt-4">
+                                        <div class="pricing text-center align-items-center py-3">
+                                            <h2>جوهر</h2>
+                                            <div class="text-muted my-1">يبدأ من</div>
+                                            <p>90 دولارًا في السنة</p>
+                                        </div>
+                                        <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                                            <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">ابدأ تجربة مجانية</a>
+                                        </div>
+                                        <div
+                                            class="price_table_feature justify-content-between align-items-center d-flex">
+                                            <ul>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">إنشاء نسخ غير محدودة بالذكاء الاصطناعي
+                                                </li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">يبدأ بـ 15 منتجًا</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">إدارة ما يصل إلى 450 منتجًا
+                                                </li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">يبدأ بـ 3 مستخدمين</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">يبدأ بمتجر واحد
+                                                    موصل
+                                                </li>
+
+                                                <li class="pb-2 d-flex align-items-start"><img
+                                                        src="../assets/images/icon/checked.png" alt="checked" class="me-1"
+                                                        width="17" height="17">يبدأ بـ 15 جيلًا ضخمًا</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">استيراد/تصدير CSV</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row pb-5 justify-content-center">
+                            <div class="col-lg-4 col-12 mb-3">
+                                <div class="card rounded-3 mt-5 border-0">
+                                    <div class="card-body">
+                                        <div class="pricing text-center align-items-center py-3">
+                                            <h2>حر</h2>
+                                            <p>0 دولار/سنة</p>
+                                        </div>
+                                        <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                                            <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">البدء</a>
+                                        </div>
+                                        <div class="price_table_feature">
+                                            <ul>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">ما يصل إلى 5 منتجات</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">1 مستخدم</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">25 جيل/شهر</li>
+                                                <li class="pb-2"><img src="../assets/images/icon/checked.png" alt="checked"
+                                                        class="me-1" width="17" height="17">استيراد CSV</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="money_back__plans text-center fw-semibold text-white pb-5">
+                <p>تتمتع جميع خططنا بضمان استعادة الأموال لمدة 30 يومًا</p>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Pricing End==============================-->
+    <!-- ============================== Started Free Start ==============================-->
+    <div class="how__start py-5">
+        <div class="container">
+            <div class="Start_Free mx-auto text-center">
+                <p>يمنحك Descriptionly كل ما تحتاجه لإنشاء نسخة منتج تجارة إلكترونية عالية الأداء منه
+                    قم بخدش المحتوى الموجود وإعادة كتابته وتحسينه، ثم انشره حيث تريد أن يكون المحتوى الخاص بك</p>
+                <div class="banner_btn pb-3 text-center" data-aos="flip-left">
+                    <a href="#" class="btn btn-lg mt-2 mb-3 py-3 px-4">ابدأ مجانًا</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Started Free End ==============================-->
+    <!-- ============================== FAQ Start ==============================-->
+    <section class="faq_wrapper pb-5">
+        <div class="container">
+            <div class="chat_content pt-5 mx-auto text-center" data-aos="fade-up">
+                <h1>الأسئلة الشائعة</h1>
+            </div>
+            <div class="accordion accordion-flush py-5 px-5" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            ما هو تطوير تطبيقات الويب؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">
+                            تطبيق الويب هو برنامج تفاعلي يتم تشغيله على خادم ويب ويمكن الوصول إليه عبر
+                            أ
+                            متصفح الإنترنت. تم تصميمه بحيث تقوم واجهة المستخدم بإرسال البيانات مرة أخرى إلى التطوير
+                            الفريق الذي أنشأه.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Why should you outsource web application development services From Inletsky?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            How much does it cost to develop a web application?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                            aria-expanded="false" aria-controls="flush-collapsefour">
+                            Which programming languages are used for web applications?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this
+                            accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is
+                            the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of
+                            content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more
+                            representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive"
+                            aria-expanded="false" aria-controls="flush-collapsefive">
+                            How long does it take to build a web app?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this
+                            accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is
+                            the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of
+                            content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more
+                            representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingsix">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix"
+                            aria-expanded="false" aria-controls="flush-collapsesix">
+                            Which is the best custom web app development company?
+                        </button>
+                    </h2>
+                    <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingseven">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven"
+                            aria-expanded="false" aria-controls="flush-collapseseven">
+                            Which is the best custom web app development company?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseseven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingseven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body accordion__body">Placeholder content for this accordion, which is
+                            intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third
+                            item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just
+                            filling up the
+                            space to make it look, at least at first glance, a bit more representative
+                            of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+
+                <div class="banner_btn pb-5 text-center" data-aos="flip-left">
+                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">ابدأ مجانًا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== FAQ End ==============================-->
+    <!-- ============================== Footer Start ==============================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper pt-5 pb-5">
+                <div class="row  pb-5 m-5">
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>يستكشف</h2>
+                        <ul>
+                            <li> <a href="#">سمات</a></li>
+                            <li> <a href="#">التسعير</a></li>
+                            <li> <a href="#">قاعدة المعرفة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>شركة</h2>
+                        <ul>
+                            <li> <a href="#">يدعم</a></li>
+                            <li> <a href="#">كن حليفا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-none">
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon text-center py-4 d-none">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2x" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="end_buttons pb-3">
+                <ul class="d-flex justify-content-center">
+                    <li>
+                        <p>© 2023 وصفا</p>
+                    </li>
+                    <li><a href="">شروط الخدمة</a></li>
+                    <li><a href="">خصوصية</a></li>
+                    <li><a href="">سياسة محتوى المستخدم</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================== Footer End ==============================-->
+</body>
+<!-- Bootstrap JS -->
+<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../assets/bootstrap/bootstrap.bundle.min.js.map"></script>
+<!-- Aos JS  -->
+<script src="../assets/js/aos.js"></script>
+<!-- Custom JS -->
+<script src="../assets/js/main.js"></script>
+
+</html>
