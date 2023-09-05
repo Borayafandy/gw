@@ -76,7 +76,7 @@ button:focus {
 
 .top-navbar a {
     color: var(--text-white);
-    margin-left: 6px;
+    margin-right: 10px;
     font-weight: 700;
     font-size: 15px;
 }
@@ -717,6 +717,40 @@ li {
 }
 
 /* =============================== Footer End ===============================*/
+/* =============================== rtl Direction Start ===============================*/
+.rtl_diraction {
+    direction: rtl;
+}
+
+.rtl_icon {
+    transition: margin-right 0.5s ease-in-out;
+}
+
+img {
+    transition: margin-right 0.5s ease-in-out;
+}
+
+.rtl_icon:hover img {
+    margin-right: 8px;
+}
+
+.rtl_icon a img {
+    transform: rotate(180deg);
+}
+
+.modal-header .btn-close {
+    margin: 0 !important;
+}
+
+.rtl_btn__dir {
+    text-align: right !important;
+}
+
+.accordion__btn__rtl::after {
+    flex: auto;
+}
+
+/* =============================== rtl Direction End ===============================*/
 
 
 
