@@ -498,6 +498,10 @@ img {
     line-height: 26px;
 }
 
+.price_table_feature li img {
+    margin-left: 6px;
+}
+
 .card_header {
     background-color: var(--primary-color);
 }
