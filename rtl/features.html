@@ -1,0 +1,295 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gravity Write Website</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.svg" type="image/svgicon">
+    <!-- font Awesome  -->
+    <script src="https://kit.fontawesome.com/31cf530d7e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css.map">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="rtl_diraction">
+    <!-- ============================== top Navbar Start==============================-->
+    <div class="fixed-top">
+        <div class="top-navbar">
+            <p>قم بإنشاء ما يصل إلى 5000 كلمة مجانًا</p>
+            <div class="icons">
+                <a href="#">إبدأ اليوم <img src="../assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                        height="20"></a>
+            </div>
+        </div>
+        <!-- ============================== top Navbar End==============================-->
+
+        <!-- ============================== Navbar Start==============================-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
+            <div class="container">
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="../assets/images/logo/logo.svg" width="33"
+                        height="27" alt="Logo">
+                    <h1>GravityWrite</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="features.html">سمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="blog.html">مدونة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="pricing.html">التسعير</a>
+                        </li>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#languageModal">
+                            <img class="language-flag" src="../assets/images/flags/gb.svg" alt="Language"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Languages">
+                        </button>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="login.html">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="signup.html">يبدأ
+                                ل
+                                حر</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Language Selection Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">اختر لغة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('us', '../assets/images/flags/us.svg')">
+                                <img class="language-flag" src="../assets/images/flags/us.svg" alt="English">
+                                English
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('sa', '../assets/images/flags/sa.svg')">
+                                <img class="language-flag" src="../assets/images/flags/sa.svg" alt="عَرَبِيّ">
+                                عَرَبِيّ
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('tr', '../assets/images/flags/tr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/tr.svg" alt="Turkish">
+                                Turkish
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('fr', '../assets/images/flags/fr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/fr.svg" alt="French">
+                                French
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('ru', '../assets/images/flags/ru.svg')">
+                                <img class="language-flag" src="../assets/images/flags/ru.svg" alt="Russian">
+                                Russian
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('in', '../assets/images/flags/in.svg')">
+                                <img class="language-flag" src="../assets/images/flags/in.svg" alt="India">
+                                India
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('dz', '../assets/images/flags/dz.svg')">
+                                <img class="language-flag" src="../assets/images/flags/dz.svg" alt="Algeria">
+                                Algeria
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('de', '../assets/images/flags/de.svg')">
+                                <img class="language-flag" src="../assets/images/flags/de.svg" alt="Germany">
+                                Germany
+                            </button>
+                            <button class="btn btn-link btn-light text-start"
+                                onclick="changeLanguage('cn', '../assets/images/flags/cn.svg')">
+                                <img class="language-flag" src="../assets/images/flags/cn.svg" alt="China">
+                                China
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================== Navbar End==============================-->
+
+    <!-- ============================== Banner Start==============================-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner_wrapper text-center py-5 mx-auto">
+                <h1>تحقيق نتائج أفضل على الفور</h1>
+                <p>اكتب المزيد من محتوى منتج التجارة الإلكترونية وشاهد أدائك على SERPs والتحويلات التي ترتفع بشكل كبير
+                </p>
+                <div class="banner_btn">
+                    <a href="#" class="btn btn-lg mt-4 py-3 px-4">ابدأ مجانًا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Banner End==============================-->
+
+    <!-- ============================== Company Start==============================-->
+    <section>
+        <div class="container">
+            <div class="company_wrapper py-5">
+                <!--data-aos="fade-up" -->
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/VIGO_prev_ui.png" alt="vigo" class="img-fluid w-75">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/marshalls.png" alt="marshalls" class="img-fluid w-75">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/27058.png" alt="designer eye" class="img-fluid w-75">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/ocado.png" alt="ocado" class="img-fluid w-75">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/target.png" alt="target" class="img-fluid w-75">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <div class="company_wrapper">
+                            <img src="../assets/images/company/hom-furniture-logo-vector_prev_ui.png" alt="furniture"
+                                class="img-fluid w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== Company End==============================-->
+
+    <!-- ============================== How Work Start==============================-->
+    <section>
+        <div class="container" style="max-width: 1050px !important;">
+            <div class="content_wrapper text-center pb-5">
+                <h2>تستخدم فرق التسويق الذكية Describely لتوسيع نطاق إنشاء محتوى منتجاتها</h2>
+            </div>
+            <div class="product__content p-lg-5 p-md-3 p-3">
+                <div class="row g-3">
+                    <div class="col-lg-6 col-md-6 col-12 text-center">
+                        <img src="../assets/images/main/Group-53.png" alt="Group" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 d-flex align-items-center">
+                        <div class="product__text">
+                            <h2>أوصاف المنتجات عالية الجودة</h2>
+                            <p>مع Describely، القدرة على إنشاء محتوى منتج عالي الجودة لا تتطلب سوى بضع نقرات
+                                بعيد. اكتب أوصاف المنتج والنقاط والعناوين والعلامات بسهولة وعلى نطاق واسع
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__content p-lg-5 p-md-3 p-3 my-5">
+                <div class="row g-3">
+                    <div class="col-lg-6 col-md-6 col-12  d-flex align-items-center">
+                        <div class="product__text">
+                            <h2>الأمثل لكبار المسئولين الاقتصاديين</h2>
+                            <p>تم تصميم أدوات تحسين محركات البحث الخاصة بنا لمساعدتك في الحصول على المرتبة الأولى بغض النظر عن المكان الذي تبيع فيه منتجاتك
+                                متصل
+                                <br><br>
+                                اسمح لـ Describely بتخطيط كلماتك الرئيسية نيابةً عنك، وتسجيل المحتوى الحالي الخاص بك مقابل تحسين محركات البحث
+                                أفضل
+                                الممارسات وتقديم توصيات بشأن الكلمات الرئيسية التي تساعد في تصنيف المحتوى الخاص بك بشكل أسرع
+                                من
+                                من أي وقت مضى
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 text-center">
+                        <img src="../assets/images/main/SEO-meta-description.png" alt="SEO-meta" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================== How Work End==============================-->
+    <!-- ============================== Footer Start ==============================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper pt-5">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>يستكشف</h2>
+                        <ul>
+                            <li> <a href="#">سمات</a></li>
+                            <li> <a href="#">التسعير</a></li>
+                            <li> <a href="#">قاعدة المعرفة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>شركة</h2>
+                        <ul>
+                            <li> <a href="#">يدعم</a></li>
+                            <li> <a href="#">كن حليفا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-none">
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon text-center py-4">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2x" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="end_buttons pb-3">
+                <ul class="d-flex justify-content-center">
+                    <li>
+                        <p>© 2023 وصفا</p>
+                    </li>
+                    <li><a href="">شروط الخدمة</a></li>
+                    <li><a href="">خصوصية</a></li>
+                    <li><a href="">سياسة محتوى المستخدم</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================== Footer End ==============================-->
+
+
+</body>
+<!-- Bootstrap JS -->
+<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../assets/bootstrap/bootstrap.bundle.min.js.map"></script>
+<!-- Custom JS -->
+<script src="../assets/js/main.js"></script>
+
+
+</html>
