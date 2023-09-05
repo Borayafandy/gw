@@ -728,6 +728,10 @@ li {
     transition: margin-right 0.5s ease-in-out;
 }
 
+.rtl_blog_details{
+    margin-right: auto; margin-left: auto;
+}
+
 img {
     transition: margin-right 0.5s ease-in-out;
 }

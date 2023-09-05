@@ -1,0 +1,263 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Chat Assistants | Web</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/logo/favicon.svg" type="image/svgicon">
+    <!-- font Awesome  -->
+    <script src="https://kit.fontawesome.com/31cf530d7e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css.map">
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../assets/css/style-rtl.css">
+</head>
+
+<body>
+    <!-- ============================== top Navbar Start ==============================-->
+    <header class="fixed-top">
+        <div class="container-fluid p-0">
+            <div class="top-navbar">
+                <p>قم بإنشاء ما يصل إلى 5000 كلمة مجانًا</p>
+                <div class="icons rtl_icon">
+                    <a href="#">إبدأ اليوم <img src="../assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
+                            height="20"></a>
+                </div>
+            </div>
+        </div>
+        <!-- ============================== top Navbar End ==============================-->
+
+        <!-- ============================== Navbar Start ==============================-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
+            <div class="container">
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="../assets/images/logo/logo.svg"
+                        width="33" height="27" alt="Logo">
+                    <h1>GravityWrite</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav gap-4 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="features.html">سمات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="blog.html">مدونة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="pricing.html">التسعير</a>
+                        </li>
+                        <button class="btn" data-bs-toggle="modal" data-bs-target="#languageModal">
+                            <img class="language-flag" src="../assets/images/flags/gb.svg" alt="Language"
+                                data-bs-toggle="tooltip" data-bs-placement="top" title="Languages">
+                        </button>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn" href="login.html">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link custom-btn bg-primary btn-lg text-center px-2" href="signup.html">ابدأ
+                                حر</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Language Selection Modal -->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">اختر لغة</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('us', '../assets/images/flags/us.svg')">
+                                <img class="language-flag" src="../assets/images/flags/us.svg" alt="English">
+                                English
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('sa', '../assets/images/flags/sa.svg')">
+                                <img class="language-flag" src="../assets/images/flags/sa.svg" alt="عَرَبِيّ">
+                                عَرَبِيّ
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('tr', '../assets/images/flags/tr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/tr.svg" alt="Turkish">
+                                Turkish
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('fr', '../assets/images/flags/fr.svg')">
+                                <img class="language-flag" src="../assets/images/flags/fr.svg" alt="French">
+                                French
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('ru', '../assets/images/flags/ru.svg')">
+                                <img class="language-flag" src="../assets/images/flags/ru.svg" alt="Russian">
+                                Russian
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('in', '../assets/images/flags/in.svg')">
+                                <img class="language-flag" src="../assets/images/flags/in.svg" alt="India">
+                                India
+                            </button>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-12 d-grid">
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('dz', '../assets/images/flags/dz.svg')">
+                                <img class="language-flag" src="../assets/images/flags/dz.svg" alt="Algeria">
+                                Algeria
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('de', '../assets/images/flags/de.svg')">
+                                <img class="language-flag" src="../assets/images/flags/de.svg" alt="Germany">
+                                Germany
+                            </button>
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
+                                onclick="changeLanguage('cn', '../assets/images/flags/cn.svg')">
+                                <img class="language-flag" src="../assets/images/flags/cn.svg" alt="China">
+                                China
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================== Navbar End ================-->
+    
+
+    <!-- ================blog=========-->
+    <div class="container" style="margin-top: 200px; margin-bottom: 100px;">
+        <div class="row">
+            <div class="col-md-12 col-lg-8 col-xl-8 offset-lg-2 offset-xl-2 rtl_blog_details">
+                <div class="card">
+                    <img src="../assets/images/blog/1.png" class="card-img-top" alt="...">
+                    <div class="blog card-body">
+                        <h1 class="card-title"><a href="blog_details.html" class="text-dark">من 169 عميلاً إلى 8,266 عميلاً
+                                في 28 يومًا: كيف قامت Frase ببناء أكبر إطلاق لـ AppSumo على الإطلاق</a></h1>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <h4>ايبسوم هو نموذج افتراضي يوضع في ال</h4>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشرايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <h4>ايبسوم هو نموذج افتراضي يوضع في ال</h4>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+
+                        <h4>ايبسوم هو نموذج افتراضي يوضع في ال</h4>
+
+                        <p>ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم مطبوعه ... بروشور او فلاير على سبيل المثال ... او نماذج مواقع انترنت ...
+
+وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم ويقول البعض ان وضع النصوص التجريبية بالتصميم قد تشغل المشاهد عن وضع الكثير من الملاحظات او الانتقادات للتصميم الاساسي.
+
+وخلافاَ للاعتقاد السائد فإن لوريم إيبسوم ليس نصاَ عشوائياً، بل إن له جذور في الأدب اللاتيني الكلاسيكي منذ العام 45 قبل الميلاد. من كتاب "حول أقاصي الخير والشر</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============end blog========-->
+<!-- ================== Footer Start ===============-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrapper pt-5">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>يستكشف</h2>
+                        <ul>
+                            <li> <a href="#">سمات</a></li>
+                            <li> <a href="#">التسعير</a></li>
+                            <li> <a href="#">قاعدة المعرفة</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-6">
+                        <h2>شركة</h2>
+                        <ul>
+                            <li> <a href="#">يدعم</a></li>
+                            <li> <a href="#">كن حليفا</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-none">
+                    </div>
+                </div>
+            </div>
+            <div class="social_icon text-center py-4">
+                <a href="#"><i class="fa-brands fa-facebook-f fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #ffffff;"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-2x" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="end_buttons pb-3">
+                <ul class="d-flex justify-content-center">
+                    <li>
+                        <p>© 2023 وصفا</p>
+                    </li>
+                    <li><a href="">شروط الخدمة</a></li>
+                    <li><a href="">خصوصية</a></li>
+                    <li><a href="">سياسة محتوى المستخدم</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================== Footer End ==============================-->
+
+
+</body>
+<!-- Bootstrap JS -->
+<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../assets/bootstrap/bootstrap.bundle.min.js.map"></script>
+<!-- Custom JS -->
+<script src="../assets/js/main.js"></script>
+
+
+</html>
