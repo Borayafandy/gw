@@ -42,6 +42,7 @@ body {
     font-family: var(--primary-font);
     background-color: var(--bg-gray);
     overflow-x: hidden !important;
+    direction: rtl;
 }
 
 a {
@@ -718,9 +719,6 @@ li {
 
 /* =============================== Footer End ===============================*/
 /* =============================== rtl Direction Start ===============================*/
-.rtl_diraction {
-    direction: rtl;
-}
 
 .rtl_icon {
     transition: margin-right 0.5s ease-in-out;
