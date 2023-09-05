@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body dir="rtl">
+<body class="rtl_diraction">
     <!-- ============================== top Navbar Start==============================-->
     <header class="fixed-top">
         <div class="container-fluid p-0">
             <div class="top-navbar">
                 <p>قم بإنشاء ما يصل إلى 5000 كلمة مجانًا</p>
-                <div class="icons">
+                <div class="rtl_icon">
                     <a href="#">إبدأ اليوم <img src="assets/images/icon/right-arrow.png" alt="right-arrow" width="20"
                             height="20"></a>
                 </div>
@@ -37,8 +37,8 @@
         <!-- ============================== Navbar Start==============================-->
         <nav class="navbar navbar-expand-lg navbar-dark py-4 navbar_wrapper">
             <div class="container">
-                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="assets/images/logo/logo.svg"
-                        width="33" height="27" alt="Logo">
+                <a class="navbar-brand d-flex gap-1" href="index.html"><img src="assets/images/logo/logo.svg" width="33"
+                        height="27" alt="Logo">
                     <h1>GravityWrite</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -83,51 +83,51 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-4 col-lg-4 col-12 d-grid">
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('us', 'assets/images/flags/us.svg')">
                                 <img class="language-flag" src="assets/images/flags/us.svg" alt="English">
                                 English
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('sa', 'assets/images/flags/sa.svg')">
                                 <img class="language-flag" src="assets/images/flags/sa.svg" alt="عَرَبِيّ">
                                 عَرَبِيّ
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('tr', 'assets/images/flags/tr.svg')">
                                 <img class="language-flag" src="assets/images/flags/tr.svg" alt="Turkish">
                                 Turkish
                             </button>
                         </div>
                         <div class="col-md-4 col-lg-4 col-12 d-grid">
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('fr', 'assets/images/flags/fr.svg')">
                                 <img class="language-flag" src="assets/images/flags/fr.svg" alt="French">
                                 French
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('ru', 'assets/images/flags/ru.svg')">
                                 <img class="language-flag" src="assets/images/flags/ru.svg" alt="Russian">
                                 Russian
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('in', 'assets/images/flags/in.svg')">
                                 <img class="language-flag" src="assets/images/flags/in.svg" alt="India">
                                 India
                             </button>
                         </div>
                         <div class="col-md-4 col-lg-4 col-12 d-grid">
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('dz', 'assets/images/flags/dz.svg')">
                                 <img class="language-flag" src="assets/images/flags/dz.svg" alt="Algeria">
                                 Algeria
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('de', 'assets/images/flags/de.svg')">
                                 <img class="language-flag" src="assets/images/flags/de.svg" alt="Germany">
                                 Germany
                             </button>
-                            <button class="btn btn-link btn-light text-start"
+                            <button class="btn btn-link btn-light text-start rtl_btn__dir"
                                 onclick="changeLanguage('cn', 'assets/images/flags/cn.svg')">
                                 <img class="language-flag" src="assets/images/flags/cn.svg" alt="China">
                                 China
@@ -146,13 +146,14 @@
                 <div class="banner_heading mx-auto">
                     <p class="writeone">الكتابة المدعومة بالذكاء الاصطناعي أيضًاL</p>
                     <h1>عزز إنشاء المحتوى الخاص بك باستخدام الذكاء الاصطناعي 🔥</h1>
-                    <p class="writetwo">قم بإنشاء المدونات ونسخ الإعلانات ورسائل البريد الإلكتروني ومنشورات الوسائط الاجتماعية والمزيد في ثوانٍ!</p>
+                    <p class="writetwo">قم بإنشاء المدونات ونسخ الإعلانات ورسائل البريد الإلكتروني ومنشورات الوسائط
+                        الاجتماعية والمزيد في ثوانٍ!</p>
                     <div class="mb-5">
                         <a href="#" class="btn btn-warning rounded-0 btn-lg mt-4 py-3 px-4 font-weight-bold">يبدأ
                             الكتابة مجانا</a>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12 col-12">
                         <div class="image-container">
                             <img src="assets/images/main/download.svg" alt="Image 1">
@@ -162,7 +163,7 @@
                             <img src="assets/images/main/download.svg" alt="Image 5">
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -345,9 +346,9 @@
             <div class="accordion accordion-flush py-5 px-5" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed accordion__btn fw-bold" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
                             ما هو تطوير تطبيقات الويب؟
                         </button>
                     </h2>
@@ -363,9 +364,9 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
                             Why should you outsource web application development services From Inletsky?
                         </button>
                     </h2>
@@ -379,9 +380,9 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
                             How much does it cost to develop a web application?
                         </button>
                     </h2>
@@ -397,9 +398,9 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingfour">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
-                            aria-controls="flush-collapsefour">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour"
+                            aria-expanded="false" aria-controls="flush-collapsefour">
                             Which programming languages are used for web applications?
                         </button>
                     </h2>
@@ -422,9 +423,9 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingfive">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false"
-                            aria-controls="flush-collapsefive">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive"
+                            aria-expanded="false" aria-controls="flush-collapsefive">
                             How long does it take to build a web app?
                         </button>
                     </h2>
@@ -447,9 +448,9 @@
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingsix">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false"
-                            aria-controls="flush-collapsesix">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsesix"
+                            aria-expanded="false" aria-controls="flush-collapsesix">
                             Which is the best custom web app development company?
                         </button>
                     </h2>
@@ -469,9 +470,9 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingseven">
-                        <button class="accordion-button collapsed accordion__btn fw-bold mt-4" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false"
-                            aria-controls="flush-collapseseven">
+                        <button class="accordion-button collapsed accordion__btn accordion__btn__rtl fw-bold mt-4"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven"
+                            aria-expanded="false" aria-controls="flush-collapseseven">
                             Which is the best custom web app development company?
                         </button>
                     </h2>
