@@ -600,7 +600,7 @@ img {
 }
 
 .input_group .form-control {
-    padding-left: 2.375rem;
+    padding-right: 2.375rem;
 }
 
 .input_group .form-control-feedback {
@@ -644,6 +644,10 @@ img {
 
 .other p:after {
     margin: 0 0 0 20px;
+}
+
+.btn_icon img {
+    margin-left: 6px;
 }
 
 
@@ -728,8 +732,9 @@ li {
     transition: margin-right 0.5s ease-in-out;
 }
 
-.rtl_blog_details{
-    margin-right: auto; margin-left: auto;
+.rtl_blog_details {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 img {
