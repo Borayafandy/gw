@@ -278,31 +278,101 @@ img {
 }
 
 /* /////////////////////////////// */
-
-.image-container {
-    overflow-x: hidden !important;
-    display: flex;
-    position: relative;
-    animation: slideImages 20s linear infinite;
-    max-width: 900px;
-    height: 50px;
-    gap: 30px;
-}
-
-.image-container img {
-    max-width: 100%;
+/* logo slider */
+.slider {
     height: auto;
-    margin: 0;
-    padding: 0;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
 
-@keyframes slideImages {
+
+.slider::before,
+.slider::after {
+    position: absolute;
+    /* background-image: linear-gradient(to right, rgba(9, 9, 121, 1) 0%, rgba(255, 255, 255, 0) 100%); */
+    /* background-image: linear-gradient(280deg, rgba(9, 9, 121, 1) 0%, rgba(9, 9, 121, 0) 100%); */
+    content: '';
+    height: 100%;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.dark .slider::before,
+.dark .slider::after {
+    position: absolute;
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 100%); */
+    content: '';
+    height: 100%;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/*  IMPORTANT CODE BELOW */
+.slide-track {
+    width: calc(100px * 20);
+    display: flex;
+    animation: scroll 20s linear infinite;
+    justify-content: space-evenly;
+}
+
+.slide {
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.dark .slide {
+    filter: brightness(60%);
+}
+
+.slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
     0% {
-        transform: translateX(0%);
+        transform: translateX(calc(-100px * 5));
     }
 
     100% {
-        transform: translateX(-100%);
+        transform: translateX(0px);
+    }
+}
+
+/* For responsive styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .slide-track {
+        width: calc(80px * 20);
+    }
+
+    .slide {
+        width: 200px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(calc(-80px * 10));
+        }
     }
 }
 
