@@ -356,11 +356,11 @@ img {
 
 @keyframes scroll {
     0% {
-        transform: translateX(0px);
+        transform: translateX(calc(-100px * 5));
     }
 
     100% {
-        transform: translateX(calc(-100px * 5));
+        transform: translateX(0px);
     }
 }
 
@@ -376,11 +376,11 @@ img {
 
     @keyframes scroll {
         0% {
-            transform: translateX(0px);
+            transform: translateX(calc(-80px * 10));
         }
 
         100% {
-            transform: translateX(calc(-80px * 10));
+            transform: translateX(0px);
         }
     }
 }
